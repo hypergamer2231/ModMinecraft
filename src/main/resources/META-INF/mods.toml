@@ -5,9 +5,13 @@ loaderVersion="[31,)"
 modId="smg_world"
 version="1.0.0"
 displayName="SMG World"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
+credits="Made by SMG"
 displayURL="https://mcreator.net"
-authors="hypergdd, MCreator"
+logoFile="logo.png"
+authors="HyperGDD ~ Snaky"
+description='''
+A custom mod for Minecraft made by SMG
+'''
 
 [[dependencies.smg_world]]
     modId="minecraft"

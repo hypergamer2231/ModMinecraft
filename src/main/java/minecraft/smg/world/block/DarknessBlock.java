@@ -26,8 +26,6 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import minecraft.smg.world.world.dimension.WestWildDimension;
-import minecraft.smg.world.item.EnergyItem;
 import minecraft.smg.world.SmgWorldModElements;
 
 import java.util.Random;
@@ -35,11 +33,11 @@ import java.util.List;
 import java.util.Collections;
 
 @SmgWorldModElements.ModElement.Tag
-public class EnergyBlockBlock extends SmgWorldModElements.ModElement {
-	@ObjectHolder("smg_world:energy_block")
+public class DarknessBlock extends SmgWorldModElements.ModElement {
+	@ObjectHolder("smg_world:darkness")
 	public static final Block block = null;
-	public EnergyBlockBlock(SmgWorldModElements instance) {
-		super(instance, 10);
+	public DarknessBlock(SmgWorldModElements instance) {
+		super(instance, 12);
 	}
 
 	@Override
@@ -50,8 +48,8 @@ public class EnergyBlockBlock extends SmgWorldModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GLASS).hardnessAndResistance(1f, 10f).lightValue(0));
-			setRegistryName("energy_block");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 10f).lightValue(0));
+			setRegistryName("darkness");
 		}
 
 		@Override
@@ -59,7 +57,7 @@ public class EnergyBlockBlock extends SmgWorldModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(EnergyItem.block, (int) (4)));
+			return Collections.singletonList(new ItemStack(this, 1));
 		}
 	}
 	@Override
@@ -70,18 +68,18 @@ public class EnergyBlockBlock extends SmgWorldModElements.ModElement {
 				public boolean place(IWorld world, ChunkGenerator generator, Random rand, BlockPos pos, OreFeatureConfig config) {
 					DimensionType dimensionType = world.getDimension().getType();
 					boolean dimensionCriteria = false;
-					if (dimensionType == WestWildDimension.type)
+					if (dimensionType == DimensionType.OVERWORLD)
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
 					return super.place(world, generator, rand, pos, config);
 				}
-			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("energy_block", "energy_block", blockAt -> {
+			}.withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("darkness", "darkness", blockAt -> {
 				boolean blockCriteria = false;
 				if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
 					blockCriteria = true;
 				return blockCriteria;
-			}), block.getDefaultState(), 2)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(10, 0, 0, 16))));
+			}), block.getDefaultState(), 3)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(3, 6, 6, 16))));
 		}
 	}
 }

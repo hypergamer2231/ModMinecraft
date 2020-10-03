@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "smg_world:items/shock_igniter"
+  }
+}

@@ -2,12 +2,12 @@
   "_fv": 10,
   "_type": "block",
   "definition": {
-    "texture": "energy_block",
-    "textureTop": "energy_block",
-    "textureLeft": "energy_block",
-    "textureFront": "energy_block",
-    "textureRight": "energy_block",
-    "textureBack": "energy_block",
+    "texture": "dark_energy",
+    "textureTop": "dark_energy",
+    "textureLeft": "dark_energy",
+    "textureFront": "dark_energy",
+    "textureRight": "dark_energy",
+    "textureBack": "dark_energy",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -22,7 +22,7 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Energy Block",
+    "name": "Dark Energy",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -32,9 +32,9 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:Energy"
+      "value": ""
     },
-    "dropAmount": 4,
+    "dropAmount": 1,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -59,7 +59,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "GLASS"
+      "value": "STONE"
     },
     "luminance": 0.0,
     "unbreakable": false,
@@ -88,17 +88,15 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "CUSTOM:WestWild"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 2,
+    "frequencyPerChunks": 3,
+    "frequencyOnChunk": 4,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 16
   }

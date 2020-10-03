@@ -1,0 +1,60 @@
+{
+  "_fv": 10,
+  "_type": "dimension",
+  "definition": {
+    "portalFrame": {
+      "value": "CUSTOM:Darkness"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0.0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Darkness Shock Igniter",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "shock_igniter",
+    "portalTexture": "darkness_frame",
+    "enablePortal": true,
+    "biomesInDimension": [
+      {
+        "value": "forest_hills"
+      },
+      {
+        "value": "mutated_taiga"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:Darkness"
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:Glowly"
+    },
+    "airColor": {
+      "value": -4138753,
+      "frgbvalue": [
+        0.753,
+        0.847,
+        1.0
+      ],
+      "fvalue": [
+        0.753,
+        0.847,
+        1.0
+      ],
+      "falpha": 1.0
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "hasWeather": true,
+    "isDark": true,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false
+  }
+}

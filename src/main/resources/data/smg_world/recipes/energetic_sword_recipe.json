@@ -1,0 +1,24 @@
+{
+  "group": "smg_world",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "smg_world:dark_energy"
+    },
+    "1": {
+      "item": "smg_world:energy_bottle"
+    },
+    "2": {
+      "item": "minecraft:end_rod"
+    }
+  },
+  "result": {
+    "item": "smg_world:energetic_sword",
+    "count": 1
+  }
+}

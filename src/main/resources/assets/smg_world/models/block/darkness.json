@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "smg_world:blocks/darkness",
+    "up": "smg_world:blocks/darkness",
+    "north": "smg_world:blocks/darkness",
+    "east": "smg_world:blocks/darkness",
+    "south": "smg_world:blocks/darkness",
+    "west": "smg_world:blocks/darkness",
+    "particle": "smg_world:blocks/darkness"
+  }
+}

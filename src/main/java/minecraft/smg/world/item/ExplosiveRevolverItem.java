@@ -34,9 +34,12 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
 
+import minecraft.smg.world.procedures.ExplosiveRevolverBulletHitsPlayerProcedure;
 import minecraft.smg.world.SmgWorldModElements;
 
 import java.util.Random;
+import java.util.Map;
+import java.util.HashMap;
 
 @SmgWorldModElements.ModElement.Tag
 public class ExplosiveRevolverItem extends SmgWorldModElements.ModElement {
@@ -163,9 +166,40 @@ public class ExplosiveRevolverItem extends SmgWorldModElements.ModElement {
 		}
 
 		@Override
+		public void onCollideWithPlayer(PlayerEntity entity) {
+			super.onCollideWithPlayer(entity);
+			Entity sourceentity = this.getShooter();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			World world = this.world;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ExplosiveRevolverBulletHitsPlayerProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
 		protected void arrowHit(LivingEntity entity) {
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
+			Entity sourceentity = this.getShooter();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			World world = this.world;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ExplosiveRevolverBulletHitsPlayerProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override
@@ -177,6 +211,14 @@ public class ExplosiveRevolverItem extends SmgWorldModElements.ModElement {
 			World world = this.world;
 			Entity entity = this.getShooter();
 			if (this.inGround) {
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					ExplosiveRevolverBulletHitsPlayerProcedure.executeProcedure($_dependencies);
+				}
 				this.remove();
 			}
 		}

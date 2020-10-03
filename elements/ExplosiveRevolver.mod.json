@@ -3,7 +3,7 @@
   "_type": "gun",
   "definition": {
     "renderType": 0,
-    "texture": "bow",
+    "texture": "explosiverevolver",
     "customModelName": "Normal",
     "name": "Revolver",
     "specialInfo": [],
@@ -31,6 +31,15 @@
       "value": "CUSTOM:ExplosiveRevolverBullet"
     },
     "bulletModel": "Default",
-    "customBulletModelTexture": ""
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "ExplosiveRevolverBulletHitsPlayer"
+    },
+    "onBulletHitsPlayer": {
+      "name": "ExplosiveRevolverBulletHitsPlayer"
+    },
+    "onBulletHitsEntity": {
+      "name": "ExplosiveRevolverBulletHitsPlayer"
+    }
   }
 }

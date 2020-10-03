@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "smg_world:blocks/dark_energy",
+    "up": "smg_world:blocks/dark_energy",
+    "north": "smg_world:blocks/dark_energy",
+    "east": "smg_world:blocks/dark_energy",
+    "south": "smg_world:blocks/dark_energy",
+    "west": "smg_world:blocks/dark_energy",
+    "particle": "smg_world:blocks/dark_energy"
+  }
+}

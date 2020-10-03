@@ -1,0 +1,20 @@
+{
+  "group": "smg_world",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "smg_world:darkness"
+    },
+    "1": {
+      "item": "smg_world:energy_bottle"
+    }
+  },
+  "result": {
+    "item": "smg_world:dark_energy",
+    "count": 1
+  }
+}
