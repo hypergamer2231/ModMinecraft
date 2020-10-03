@@ -1,0 +1,22 @@
+{
+  "group": "smg_world",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "smg_world:energy"
+    },
+    {
+      "item": "smg_world:energy"
+    },
+    {
+      "item": "smg_world:energy"
+    },
+    {
+      "item": "smg_world:energy"
+    }
+  ],
+  "result": {
+    "item": "smg_world:energy_block",
+    "count": 1
+  }
+}

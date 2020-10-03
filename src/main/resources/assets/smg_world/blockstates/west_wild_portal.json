@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "smg_world:block/west_wild_portal_ew"
+    },
+    "axis=x": {
+      "model": "smg_world:block/west_wild_portal_ns"
+    }
+  }
+}

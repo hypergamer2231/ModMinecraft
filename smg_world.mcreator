@@ -1,0 +1,145 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "WestWild",
+      "type": "dimension",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "west_wild"
+    },
+    {
+      "name": "RevolverBullet",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "revolver_bullet"
+    },
+    {
+      "name": "Revolver",
+      "type": "gun",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "revolver"
+    },
+    {
+      "name": "Bullet",
+      "type": "recipe",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bullet"
+    },
+    {
+      "name": "ExplosiveRevolverBullet",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "explosive_revolver_bullet"
+    },
+    {
+      "name": "ExplosiveRevolver",
+      "type": "gun",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "explosive_revolver"
+    },
+    {
+      "name": "ExplosiveBullet",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "explosive_bullet"
+    },
+    {
+      "name": "EnergeticSword",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energetic_sword"
+    },
+    {
+      "name": "Energy",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energy"
+    },
+    {
+      "name": "EnergyBottle",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energy_bottle"
+    },
+    {
+      "name": "EnergyBlock",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energy_block"
+    },
+    {
+      "name": "EnergyBlockRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energy_block_recipe"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.smg_world.energy_block": "Energy Block",
+      "item.smg_world.revolver": "Revolver",
+      "item.smg_world.energetic_sword": "Energetic Sword",
+      "item.smg_world.energy": "Energy",
+      "item.smg_world.revolver_bullet": "Revolver Bullet",
+      "item.smg_world.energy_bottle": "Energy Bottle",
+      "item.smg_world.west_wild": "Sand Fire",
+      "item.smg_world.explosive_revolver": "Revolver",
+      "item.smg_world.explosive_revolver_bullet": "Explosive Revolver Bullet"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "smg_world",
+    "modName": "SMG World",
+    "version": "1.0.0",
+    "author": "hypergdd, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "modElementsPackage": "minecraft.smg.world",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000432115
+}

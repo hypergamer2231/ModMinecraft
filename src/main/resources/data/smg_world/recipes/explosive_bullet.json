@@ -1,0 +1,22 @@
+{
+  "group": "smg_world",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:fire_charge"
+    },
+    "1": {
+      "item": "minecraft:gunpowder"
+    },
+    "2": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "smg_world:explosive_revolver_bullet",
+    "count": 8
+  }
+}

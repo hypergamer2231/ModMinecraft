@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "smg_world:blocks/energy_block",
+    "up": "smg_world:blocks/energy_block",
+    "north": "smg_world:blocks/energy_block",
+    "east": "smg_world:blocks/energy_block",
+    "south": "smg_world:blocks/energy_block",
+    "west": "smg_world:blocks/energy_block",
+    "particle": "smg_world:blocks/energy_block"
+  }
+}

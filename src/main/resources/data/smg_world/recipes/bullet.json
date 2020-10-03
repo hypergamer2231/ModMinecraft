@@ -1,0 +1,19 @@
+{
+  "group": "smg_world",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:gunpowder"
+    },
+    "1": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "smg_world:revolver_bullet",
+    "count": 8
+  }
+}
