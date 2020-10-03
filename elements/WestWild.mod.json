@@ -26,10 +26,10 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.SAND#0"
+      "value": "Blocks.SANDSTONE#0"
     },
     "fluidBlock": {
-      "value": "Blocks.SANDSTONE#0"
+      "value": "Blocks.WATER"
     },
     "airColor": {
       "value": -4138753,

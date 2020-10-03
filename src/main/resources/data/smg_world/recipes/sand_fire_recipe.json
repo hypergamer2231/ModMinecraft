@@ -1,0 +1,16 @@
+{
+  "group": "smg_world",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "minecraft:flint_and_steel"
+    }
+  ],
+  "result": {
+    "item": "smg_world:west_wild",
+    "count": 1
+  }
+}

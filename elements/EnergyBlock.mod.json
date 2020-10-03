@@ -95,10 +95,16 @@
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
+      },
+      {
+        "value": "Blocks.SANDSTONE#0"
+      },
+      {
+        "value": "Blocks.SAND#0"
       }
     ],
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 2,
+    "frequencyPerChunks": 16,
+    "frequencyOnChunk": 6,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 16
   }

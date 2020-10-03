@@ -209,6 +209,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "west_wild_chest"
+    },
+    {
+      "name": "SandFireRecipe",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sand_fire_recipe"
     }
   ],
   "variable_elements": [],

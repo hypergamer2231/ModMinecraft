@@ -753,11 +753,11 @@ public class WestWildDimension extends SmgWorldModElements.ModElement {
 		public ChunkProviderModded(IWorld world, BiomeProvider provider) {
 			super(world, provider, new OverworldGenSettings() {
 				public BlockState getDefaultBlock() {
-					return Blocks.SAND.getDefaultState();
+					return Blocks.SANDSTONE.getDefaultState();
 				}
 
 				public BlockState getDefaultFluid() {
-					return Blocks.SANDSTONE.getDefaultState();
+					return Blocks.WATER.getDefaultState();
 				}
 			});
 			this.randomSeed.skip(5349);
@@ -785,7 +785,7 @@ public class WestWildDimension extends SmgWorldModElements.ModElement {
 				for (Biome biome : this.biomes) {
 					biome.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(new CaveWorldCarver(ProbabilityConfig::deserialize, 256) {
 						{
-							carvableBlocks = ImmutableSet.of(Blocks.SAND.getDefaultState().getBlock(),
+							carvableBlocks = ImmutableSet.of(Blocks.SANDSTONE.getDefaultState().getBlock(),
 									biome.getSurfaceBuilder().getConfig().getTop().getBlock(),
 									biome.getSurfaceBuilder().getConfig().getUnder().getBlock());
 						}
