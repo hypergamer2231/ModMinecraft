@@ -218,6 +218,53 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sand_fire_recipe"
+    },
+    {
+      "name": "DesertOldHouse",
+      "type": "structure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desert_old_house"
+    },
+    {
+      "name": "DesertOldHouseOnStructureInstanceGenerated",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desert_old_house_on_structure_instance_generated",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DesertOldChest",
+      "type": "loottable",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "desert_old_chest"
     }
   ],
   "variable_elements": [],
