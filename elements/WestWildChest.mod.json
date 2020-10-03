@@ -1,0 +1,75 @@
+{
+  "_fv": 10,
+  "_type": "loottable",
+  "definition": {
+    "type": "Generic",
+    "pools": [
+      {
+        "minrolls": 0,
+        "maxrolls": 1,
+        "minbonusrolls": 0,
+        "maxbonusrolls": 0,
+        "hasbonusrolls": false,
+        "entries": [
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:ExplosiveRevolver"
+            },
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "minrolls": 0,
+        "maxrolls": 2,
+        "minbonusrolls": 0,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
+        "entries": [
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Revolver"
+            },
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "minrolls": 0,
+        "maxrolls": 12,
+        "minbonusrolls": 0,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
+        "entries": [
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:RevolverBullet"
+            },
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "minrolls": 0,
+        "maxrolls": 3,
+        "minbonusrolls": 0,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
+        "entries": [
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:ExplosiveRevolverBullet"
+            },
+            "weight": 1
+          }
+        ]
+      }
+    ],
+    "name": "west_wild_chest",
+    "namespace": "mod"
+  }
+}

@@ -200,6 +200,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "WestWildChest",
+      "type": "loottable",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "west_wild_chest"
     }
   ],
   "variable_elements": [],
