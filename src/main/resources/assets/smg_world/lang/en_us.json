@@ -5,12 +5,12 @@
   "block.smg_world.darkness": "Darkness",
   "block.smg_world.dark_energy": "Dark Energy",
   "block.smg_world.energy_block": "Energy Block",
+  "item.smg_world.energetic_gun": "Energetic Gun",
   "item.smg_world.energetic_sword": "Energetic Sword",
   "item.smg_world.revolver_bullet": "Revolver Bullet",
   "item.smg_world.west_wild": "Sand Fire",
   "item.smg_world.explosive_revolver": "Revolver",
-  "item.smg_world.glowly_bucket": "Glowly Bucket",
   "item.smg_world.darkness_dimension": "Darkness Shock Igniter",
   "item.smg_world.explosive_revolver_bullet": "Explosive Revolver Bullet",
-  "fluid.glowly": "Glowly"
+  "item.smg_world.energy_shoot": "Energy Shoot"
 }

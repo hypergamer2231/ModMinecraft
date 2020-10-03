@@ -2,7 +2,7 @@
   "_fv": 10,
   "_type": "structure",
   "definition": {
-    "structure": "desert_old_house",
+    "structure": "old_desert_house",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 10000,

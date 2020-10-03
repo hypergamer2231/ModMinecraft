@@ -70,7 +70,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import minecraft.smg.world.item.DarknessDimensionItem;
-import minecraft.smg.world.block.GlowlyBlock;
 import minecraft.smg.world.block.DarknessBlock;
 import minecraft.smg.world.SmgWorldModElements;
 
@@ -141,7 +140,7 @@ public class DarknessDimensionDimension extends SmgWorldModElements.ModElement {
 	public static class CustomPortalBlock extends NetherPortalBlock {
 		public CustomPortalBlock() {
 			super(Block.Properties.create(Material.PORTAL).doesNotBlockMovement().tickRandomly().hardnessAndResistance(-1.0F).sound(SoundType.GLASS)
-					.lightValue(0).noDrops());
+					.lightValue(15).noDrops());
 			setRegistryName("darkness_dimension_portal");
 		}
 
@@ -742,7 +741,7 @@ public class DarknessDimensionDimension extends SmgWorldModElements.ModElement {
 				}
 
 				public BlockState getDefaultFluid() {
-					return GlowlyBlock.block.getDefaultState();
+					return Blocks.WATER.getDefaultState();
 				}
 			});
 			this.randomSeed.skip(5349);

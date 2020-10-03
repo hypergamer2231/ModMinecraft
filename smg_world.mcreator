@@ -119,15 +119,6 @@
       "registry_name": "darkness"
     },
     {
-      "name": "Glowly",
-      "type": "fluid",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "glowly"
-    },
-    {
       "name": "DarknessDimension",
       "type": "dimension",
       "sortid": 13,
@@ -202,15 +193,6 @@
       }
     },
     {
-      "name": "WestWildChest",
-      "type": "loottable",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "west_wild_chest"
-    },
-    {
       "name": "SandFireRecipe",
       "type": "recipe",
       "sortid": 20,
@@ -220,35 +202,27 @@
       "registry_name": "sand_fire_recipe"
     },
     {
-      "name": "DesertOldHouse",
-      "type": "structure",
+      "name": "OldDesertChest",
+      "type": "loottable",
       "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "desert_old_house"
+      "registry_name": "old_desert_chest"
     },
     {
-      "name": "DesertOldHouseOnStructureInstanceGenerated",
+      "name": "ExplosiveRevolverBulletHitsentity",
       "type": "procedure",
       "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "desert_old_house_on_structure_instance_generated",
+      "registry_name": "explosive_revolver_bullet_hitsentity",
       "metadata": {
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
+            "name": "entity",
+            "type": "entity"
           },
           {
             "name": "world",
@@ -258,13 +232,40 @@
       }
     },
     {
-      "name": "DesertOldChest",
-      "type": "loottable",
+      "name": "OldDesertHouse",
+      "type": "structure",
       "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "desert_old_chest"
+      "registry_name": "old_desert_house"
+    },
+    {
+      "name": "EnergyShoot",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energy_shoot"
+    },
+    {
+      "name": "EnergeticGun",
+      "type": "gun",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "energetic_gun"
+    },
+    {
+      "name": "ElectricBowRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "electric_bow_recipe"
     }
   ],
   "variable_elements": [],
@@ -277,14 +278,14 @@
       "block.smg_world.darkness": "Darkness",
       "block.smg_world.dark_energy": "Dark Energy",
       "block.smg_world.energy_block": "Energy Block",
+      "item.smg_world.energetic_gun": "Energetic Gun",
       "item.smg_world.energetic_sword": "Energetic Sword",
       "item.smg_world.revolver_bullet": "Revolver Bullet",
       "item.smg_world.west_wild": "Sand Fire",
       "item.smg_world.explosive_revolver": "Revolver",
-      "item.smg_world.glowly_bucket": "Glowly Bucket",
       "item.smg_world.darkness_dimension": "Darkness Shock Igniter",
       "item.smg_world.explosive_revolver_bullet": "Explosive Revolver Bullet",
-      "fluid.glowly": "Glowly"
+      "item.smg_world.energy_shoot": "Energy Shoot"
     }
   },
   "workspaceSettings": {

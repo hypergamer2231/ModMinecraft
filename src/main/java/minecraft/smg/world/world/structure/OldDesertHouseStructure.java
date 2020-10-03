@@ -30,9 +30,9 @@ import minecraft.smg.world.SmgWorldModElements;
 import java.util.Random;
 
 @SmgWorldModElements.ModElement.Tag
-public class DesertOldHouseStructure extends SmgWorldModElements.ModElement {
-	public DesertOldHouseStructure(SmgWorldModElements instance) {
-		super(instance, 21);
+public class OldDesertHouseStructure extends SmgWorldModElements.ModElement {
+	public OldDesertHouseStructure(SmgWorldModElements instance) {
+		super(instance, 23);
 	}
 
 	@Override
@@ -62,7 +62,7 @@ public class DesertOldHouseStructure extends SmgWorldModElements.ModElement {
 						int y = spawnTo.getY();
 						int z = spawnTo.getZ();
 						Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("smg_world", "desert_old_house"));
+								.getTemplateDefaulted(new ResourceLocation("smg_world", "old_desert_house"));
 						if (template == null)
 							return false;
 						template.addBlocksToWorld(world, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)

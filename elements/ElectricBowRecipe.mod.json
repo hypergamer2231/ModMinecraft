@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:EnergyBottle"
       },
       {
-        "value": "CUSTOM:DarkEnergy"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DIAMOND"
+        "value": "CUSTOM:Darkness"
       },
       {
         "value": "CUSTOM:EnergyBottle"
       },
       {
-        "value": "Items.DIAMOND"
+        "value": "Items.DRAGON_BREATH"
       },
       {
-        "value": ""
+        "value": "CUSTOM:DarkEnergy"
       },
       {
-        "value": "Blocks.END_ROD"
+        "value": "CUSTOM:Darkness"
       },
       {
-        "value": ""
+        "value": "CUSTOM:DarkEnergy"
+      },
+      {
+        "value": "Items.DRAGON_BREATH"
+      },
+      {
+        "value": "CUSTOM:EnergyBottle"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:EnergeticSword"
+      "value": "CUSTOM:EnergeticGun"
     },
-    "name": "energetic_sword_recipe",
+    "name": "electric_bow_recipe",
     "namespace": "mod"
   }
 }

@@ -1,0 +1,42 @@
+{
+  "group": "smg_world",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "smg_world:energy_bottle"
+    },
+    "1": {
+      "item": "smg_world:darkness"
+    },
+    "2": {
+      "item": "smg_world:energy_bottle"
+    },
+    "3": {
+      "item": "minecraft:dragon_breath"
+    },
+    "4": {
+      "item": "smg_world:dark_energy"
+    },
+    "5": {
+      "item": "smg_world:darkness"
+    },
+    "6": {
+      "item": "smg_world:dark_energy"
+    },
+    "7": {
+      "item": "minecraft:dragon_breath"
+    },
+    "8": {
+      "item": "smg_world:energy_bottle"
+    }
+  },
+  "result": {
+    "item": "smg_world:energetic_gun",
+    "count": 1
+  }
+}

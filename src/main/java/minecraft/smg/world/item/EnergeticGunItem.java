@@ -39,13 +39,13 @@ import minecraft.smg.world.SmgWorldModElements;
 import java.util.Random;
 
 @SmgWorldModElements.ModElement.Tag
-public class RevolverItem extends SmgWorldModElements.ModElement {
-	@ObjectHolder("smg_world:revolver")
+public class EnergeticGunItem extends SmgWorldModElements.ModElement {
+	@ObjectHolder("smg_world:energetic_gun")
 	public static final Item block = null;
-	@ObjectHolder("smg_world:entitybulletrevolver")
+	@ObjectHolder("smg_world:entitybulletenergetic_gun")
 	public static final EntityType arrow = null;
-	public RevolverItem(SmgWorldModElements instance) {
-		super(instance, 2);
+	public EnergeticGunItem(SmgWorldModElements instance) {
+		super(instance, 24);
 	}
 
 	@Override
@@ -53,7 +53,7 @@ public class RevolverItem extends SmgWorldModElements.ModElement {
 		elements.items.add(() -> new ItemRanged());
 		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
 				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulletrevolver").setRegistryName("entitybulletrevolver"));
+				.size(0.5f, 0.5f)).build("entitybulletenergetic_gun").setRegistryName("entitybulletenergetic_gun"));
 	}
 
 	@Override
@@ -65,7 +65,7 @@ public class RevolverItem extends SmgWorldModElements.ModElement {
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
 			super(new Item.Properties().group(ItemGroup.COMBAT).maxDamage(100));
-			setRegistryName("revolver");
+			setRegistryName("energetic_gun");
 		}
 
 		@Override
@@ -93,23 +93,23 @@ public class RevolverItem extends SmgWorldModElements.ModElement {
 				double z = entity.getPosZ();
 				if (true) {
 					ItemStack stack = ShootableItem.getHeldAmmo(entity,
-							e -> e.getItem() == new ItemStack(RevolverBulletItem.block, (int) (1)).getItem());
+							e -> e.getItem() == new ItemStack(EnergyBottleItem.block, (int) (1)).getItem());
 					if (stack == ItemStack.EMPTY) {
 						for (int i = 0; i < entity.inventory.mainInventory.size(); i++) {
 							ItemStack teststack = entity.inventory.mainInventory.get(i);
-							if (teststack != null && teststack.getItem() == new ItemStack(RevolverBulletItem.block, (int) (1)).getItem()) {
+							if (teststack != null && teststack.getItem() == new ItemStack(EnergyBottleItem.block, (int) (1)).getItem()) {
 								stack = teststack;
 								break;
 							}
 						}
 					}
 					if (entity.abilities.isCreativeMode || stack != ItemStack.EMPTY) {
-						ArrowCustomEntity entityarrow = shoot(world, entity, random, 15f, 5, 5);
+						ArrowCustomEntity entityarrow = shoot(world, entity, random, 10f, 30, 5);
 						itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 						if (entity.abilities.isCreativeMode) {
 							entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
 						} else {
-							if (new ItemStack(RevolverBulletItem.block, (int) (1)).isDamageable()) {
+							if (new ItemStack(EnergyBottleItem.block, (int) (1)).isDamageable()) {
 								if (stack.attemptDamageItem(1, random, entity)) {
 									stack.shrink(1);
 									stack.setDamage(0);
@@ -154,12 +154,12 @@ public class RevolverItem extends SmgWorldModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(RevolverBulletItem.block, (int) (1));
+			return new ItemStack(EnergyShootItem.block, (int) (1));
 		}
 
 		@Override
 		protected ItemStack getArrowStack() {
-			return new ItemStack(RevolverBulletItem.block, (int) (1));
+			return new ItemStack(EnergyBottleItem.block, (int) (1));
 		}
 
 		@Override
@@ -185,7 +185,7 @@ public class RevolverItem extends SmgWorldModElements.ModElement {
 		ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, entity, world);
 		entityarrow.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, power * 2, 0);
 		entityarrow.setSilent(true);
-		entityarrow.setIsCritical(true);
+		entityarrow.setIsCritical(false);
 		entityarrow.setDamage(damage);
 		entityarrow.setKnockbackStrength(knockback);
 		world.addEntity(entityarrow);
@@ -193,7 +193,7 @@ public class RevolverItem extends SmgWorldModElements.ModElement {
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.wither.break_block")),
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")),
 				SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
@@ -203,17 +203,17 @@ public class RevolverItem extends SmgWorldModElements.ModElement {
 		double d0 = target.getPosY() + (double) target.getEyeHeight() - 1.1;
 		double d1 = target.getPosX() - entity.getPosX();
 		double d3 = target.getPosZ() - entity.getPosZ();
-		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 15f * 2, 12.0F);
+		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 10f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setDamage(5);
+		entityarrow.setDamage(30);
 		entityarrow.setKnockbackStrength(5);
-		entityarrow.setIsCritical(true);
+		entityarrow.setIsCritical(false);
 		entity.world.addEntity(entityarrow);
 		double x = entity.getPosX();
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.wither.break_block")),
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")),
 				SoundCategory.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}

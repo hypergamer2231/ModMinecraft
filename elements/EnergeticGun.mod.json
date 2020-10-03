@@ -3,32 +3,32 @@
   "_type": "gun",
   "definition": {
     "renderType": 0,
-    "texture": "bow",
+    "texture": "energetic_bow",
     "customModelName": "Normal",
-    "name": "Revolver",
+    "name": "Energetic Gun",
     "specialInfo": [],
     "creativeTab": {
       "value": "COMBAT"
     },
     "stackSize": 1,
     "ammoItem": {
-      "value": "CUSTOM:RevolverBullet"
+      "value": "CUSTOM:EnergyBottle"
     },
     "shootConstantly": false,
     "usageCount": 100,
     "actionSound": {
-      "value": "entity.wither.break_block"
+      "value": "entity.arrow.shoot"
     },
     "hasGlow": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "bulletPower": 15.0,
-    "bulletDamage": 5.0,
+    "bulletPower": 10.0,
+    "bulletDamage": 30.0,
     "bulletKnockback": 5,
-    "bulletParticles": true,
+    "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
-      "value": "CUSTOM:RevolverBullet"
+      "value": "CUSTOM:EnergyShoot"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": ""
